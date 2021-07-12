@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:app_covid19/theme.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   @override
