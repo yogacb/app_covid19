@@ -1,5 +1,7 @@
 import 'package:app_covid19/pages/homepage.dart';
+import 'package:app_covid19/provider/covid_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,8 +10,11 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomePage(),
+    return ChangeNotifierProvider(
+      create: (context) => CovidProvider(),
+      child: MaterialApp(
+        home: HomePage(),
+      ),
     );
   }
 }
