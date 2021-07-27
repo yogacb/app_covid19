@@ -21,6 +21,7 @@ class HomePage extends StatelessWidget {
                 int index = 0;
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: data.map((item) {
                     index++;
 
